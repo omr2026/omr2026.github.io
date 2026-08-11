@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практические работы — Урок 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 480px;
+            width: 100%;
+            padding: 40px 36px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #6b7280;
+            margin-bottom: 32px;
+        }
+
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .file-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: #f7f8fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1a1a2e;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .file-link:hover {
+            background: #eef0f4;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .icon {
+            width: 44px;
+            height: 44px;
+            background: #4361ee;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .file-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-name {
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .file-desc {
+            font-size: 13px;
+            color: #9ca3af;
+            margin-top: 2px;
+        }
+
+        .arrow {
+            color: #9ca3af;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Практические работы</h1>
+        <p class="subtitle">Урок 1 — скачайте файлы по ссылкам ниже</p>
+
+        <div class="file-list">
+            <a class="file-link" href="Практическая_работа_Урок_1_1.docx" download>
+                <div class="icon">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+                </div>
+                <div class="file-info">
+                    <div class="file-name">Практическая работа — Урок 1.1</div>
+                    <div class="file-desc">Скачать .docx</div>
+                </div>
+                <span class="arrow">↓</span>
+            </a>
+
+            <a class="file-link" href="Практическая_работа_Урок_1_2.docx" download>
+                <div class="icon">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+                </div>
+                <div class="file-info">
+                    <div class="file-name">Практическая работа — Урок 1.2</div>
+                    <div class="file-desc">Скачать .docx</div>
+                </div>
+                <span class="arrow">↓</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
